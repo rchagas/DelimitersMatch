@@ -5571,11 +5571,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/rchagas/Data/RChagas/Projetos/BalancedSupport/BalancedSupport/BalancedSupport.csproj",
-      "projectName": "BalancedSupport",
-      "projectPath": "/media/rchagas/Data/RChagas/Projetos/BalancedSupport/BalancedSupport/BalancedSupport.csproj",
+      "projectUniqueName": "/media/rchagas/Data/RChagas/Projetos/BalancedSupport/DelimitersMatch/DelimitersMatch.csproj",
+      "projectName": "DelimitersMatch",
+      "projectPath": "/media/rchagas/Data/RChagas/Projetos/BalancedSupport/DelimitersMatch/DelimitersMatch.csproj",
       "packagesPath": "/home/rchagas/.nuget/packages/",
-      "outputPath": "/media/rchagas/Data/RChagas/Projetos/BalancedSupport/BalancedSupport/obj/",
+      "outputPath": "/media/rchagas/Data/RChagas/Projetos/BalancedSupport/DelimitersMatch/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/rchagas/.nuget/NuGet/NuGet.Config"
