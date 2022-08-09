@@ -7,7 +7,11 @@ namespace DelimitersMatch // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(DelimitersMatch("[]"));
+            foreach(string arg in args){
+                if(DelimitersMatch(arg))
+                    Console.WriteLine(arg + " - Válido");
+                else Console.WriteLine(arg + " - Não Válido");
+            }
         }
         public static bool DelimitersMatch(string delimiters)
         {
@@ -22,12 +26,13 @@ namespace DelimitersMatch // Note: actual namespace depends on the project name.
 
                 else if (dictDelimiters.ContainsValue(delimiter))
                 {
-                    if (nextDelimiter.Peek() == delimiter)
+                    if(nextDelimiter.Count == 0)
+                        return false;
+                    else if (nextDelimiter.Peek() == delimiter)
                         nextDelimiter.Pop();
                     else return false;
                 }
-
-                else throw new InvalidDataException();
+                // else throw new InvalidDataException();
             }
             if(nextDelimiter.Count == 0)
                 return true;

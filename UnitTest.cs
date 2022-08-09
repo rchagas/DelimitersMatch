@@ -16,12 +16,16 @@ public class UnitTest {
         Assert.False(Program.DelimitersMatch("{}{}{}["));
         Assert.False(Program.DelimitersMatch("{{[]}({}[])[(){}]}{{[]}({}[])[(){}]}[]{())}[]"));
     }
-
-    [Fact]
-    public void ErrorTest(){
-        Assert.Throws<InvalidDataException>(() => Program.DelimitersMatch("a"));
-        Assert.Throws<InvalidDataException>(() => Program.DelimitersMatch("[](){}'"));
-        Assert.Throws<InvalidDataException>(() => Program.DelimitersMatch("[{(x)}]"));
-        Assert.Throws<InvalidDataException>(() => Program.DelimitersMatch("{()}{{}}{[@]}"));
-    }
+    
+    /*
+        Teste obsoleto considerando caracteres não delimitadores como exceção
+    */
+    // [Fact]
+    // public void ErrorTest(){
+    //     Assert.Throws<InvalidDataException>(() => Program.DelimitersMatch("a"));
+    //     Assert.Throws<InvalidDataException>(() => Program.DelimitersMatch("[](){}'"));
+    //     Assert.Throws<InvalidDataException>(() => Program.DelimitersMatch("[{(x)}]"));
+    //     Assert.Throws<InvalidDataException>(() => Program.DelimitersMatch("{()}{{}}{[@]}"));
+    // }
+    
 }
